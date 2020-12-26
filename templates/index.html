@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block head %}
+<h1 style="color:blue; text-align: center;">Task Manager</h1>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+  <h1 style="color: rgb(155, 18, 18); text-align: center;">Tasks</h1>
+  {% if tasks|length < 1 %} 
+  <h3 style="color: royalblue; text-align: center">Task list is empty!<br> Create one below!</h3>
+  {% else %}
+    <table>
+      <tr>
+        <th>Task</th>
+        <th>Added Date</th>
+        <th>Action</th>
+      </tr>
+      {% for task in tasks %}
+      <tr>
+        <td>{{ task.content}}</td>
+        <td>{{task.date_created.strftime('%d/%b/%Y')}}</td>
+        <td>
+          <a href="/update/{{task.id}}">Update</a>
+          <br>
+          <a href="/delete/{{task.id}}">Delete</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+      <br>
+      <form action="/" method='POST'>
+        <input type="text" name="content" id='content' required autofocus autocomplete="on" placeholder="Task Name"> 
+        <input type="submit" id='submit' value="Add Task" name='submit'>
+      </form>
+</div>
+<a class = "btn" href = "{{url_for('about')}}"> About Me</a>
+{% endblock %}

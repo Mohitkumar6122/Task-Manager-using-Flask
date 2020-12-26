@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="header">
+    <h1>About Me</h1>
+  </div><!-- end header-->
+  <div class="intro column">
+    <h2>Introduction</h2>
+    <p>
+      A Computer Science student who enjoys applying himself in challenging situations and solving problems which
+      require original insight, creativity, and programming skill. I love Competitive programming, Machine Learning, and
+      building new stuff.
+    </p>
+  </div><!-- end intro-->
+  <div class="skills column">
+    <h3>My Skills</h3>
+    <ul id="skill-list">
+      <li>Machine Learning</li>
+      <li>Competitive programming</li>
+      <li>Problem solving</li>
+      <li>Teamwork</li>
+      <li>Analytical skills</li>
+    </ul>
+    <!--end skill-list-->
+  </div><!-- end skills-->
+  <div class="main-text">
+    <h3>More About Me</h3>
+    <p>
+      I am pursuing my CS Graduation from <a href = "https://en.wikipedia.org/wiki/National_Institute_of_Technology,_Hamirpur">NIT Hamirpur</a>,
+      I love building new stuff and watching Anime. Besides this i
+      love athletics and sports and i am Sports Secretary of NIT Hamirpur and
+      I have also organised various sports meet and tournaments during my college time.
+    </p>
+    <p>
+      I'm highly energetic and motivated person and I love to work as a member or a leader of a team.
+      I especially enjoy working with changing projects and taking them forward with rapid pace but high precision.
+      I am talkative and sociable but also known for getting "in the zone"
+      while concentrating on detailed work like programming or designing.
+    </p>
+  </div><!-- end main-text-->
+  <a class = "btn" href = "{{url_for('index')}}"> Home Page</a>
+  <footer class="content-footer">
+    <br>
+    <p>Say hi to me on these social networks:</p>
+    <ul class="social">
+      <li><a class="css-is-deranged" href="https://github.com/Mohitkumar6122" target="_blank">GitHub</a></li>
+      <li><a class="css-is-deranged" href="https://www.linkedin.com/in/mohit-kumar6122/" target="_blank">Linkedin</a></li>
+      <li><a class="css-is-deranged" href="mailto: mkay6123@gmail.com" target="_blank">Email</a></li>
+    </ul>
+
+  </footer>
+</div>
+<!--end container-->
+{% endblock %}

@@ -1,0 +1,64 @@
+body, html {
+  border: medium;
+  margin-left: 0;
+  font-size: large;
+  font-style: italic;
+  font-weight:600;
+  font-family: cursive;
+  background-image: url('https://i2.wp.com/files.123freevectors.com/wp-content/original/108129-light-blue-wave.jpg?w=800&q=95');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%
+}
+
+.content {
+  margin: 0 auto;
+  width: 400px;
+}
+
+table, td, th {
+  border: 1px solid #aaa;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 30px;
+}
+
+td {
+  text-align: center;
+  padding: 5px;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+#content {
+  width: 70%;
+}
+.container{
+  font-weight: normal;
+}
+.content-footer{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.btn{
+  position: absolute;
+  font-weight: bold;
+  font-size:xx-large;
+  color:rgb(81, 92, 104);
+  bottom: 8px;
+  right:16px;
+}
